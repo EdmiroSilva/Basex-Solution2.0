@@ -31,6 +31,15 @@ File Name: responsive.css
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .about .titlepage h2 {
+    font-size: 28px; /* Ajustar o tamanho do título para telas médias */
+  }
+
+  .about p {
+    font-size: 16px; /* Tamanho de fonte adequado para leitura em dispositivos móveis */
+    line-height: 1.6; /* Melhorar a legibilidade */
+    padding: 0 10px; /* Adicionar algum padding ao redor do texto para evitar que fique grudado nas bordas */
+  }
   .navigation.navbar-dark .navbar-nav .nav-link {
     padding: 0px 7px;
   }
@@ -73,216 +82,55 @@ File Name: responsive.css
     line-height: 30px;
   }
 }
-
 @media (min-width: 320px) and (max-width: 768px) {
-  #top_section {
-    padding-top: 150px;
-    height: 700px;
+  .about {
+    padding: 20px 10px; /* Ajusta o padding para evitar sobrecarga de espaço */
   }
-  .d_none {
-    display: none;
-  }
-  .logo {
-    text-align: left;
-    display: block;
-  }
-  .banner_main .bluid h1 {
-    font-size: 84px;
-    line-height: 109px;
-  }
-  #we1 a.carousel-control-next,
-  #we1 a.carousel-control-prev {
-    top: 103%;
-  }
-  #we1 a.carousel-control-prev {
-    left: 37%;
-  }
-  #we1 a.carousel-control-next {
-    right: 37%;
-  }
-  .main_form .send_btn {
-    margin-bottom: 40px;
-  }
-  .newslatter_form {
-    margin-top: 50px;
-  }
-  .navigation.navbar {
-    float: right;
-    display: inherit !important;
-    padding: 0;
-    width: 100%;
-  }
-  .navigation .navbar-collapse {
-    background: #2b2b2b;
-    padding: 20px;
-    margin-top: 66px;
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-  }
-  .navigation.navbar-dark .navbar-nav .nav-link {
-    padding: 10px 0;
-    color: #fff;
-    text-align: left;
-  }
-  .navigation.navbar-dark .navbar-toggler {
-    border: inherit;
-    float: right;
-    padding: 0;
-    width: 100%;
-    outline: inherit;
-    margin-top: 0px;
-  }
-  .navigation.navbar-dark .navbar-toggler-icon {
-    background: url(../images/menu_btn.png);
-    background-repeat: no-repeat;
-    width: 48px;
-    float: right;
-  }
-}
 
-@media (max-width: 600px) {
-  .header {
-    padding: 37px 0px;
+  .about .titlepage h2 {
+    font-size: 22px; /* Tamanho do título mais ajustado para dispositivos móveis */
+    text-align: center; /* Centraliza o título para melhor apresentação */
   }
-  .d_none {
-    display: none !important;
+
+  .about p {
+    font-size: 16px; /* Aumenta o tamanho da fonte do parágrafo para melhorar a legibilidade */
+    line-height: 1.6; /* Aumenta a altura da linha para melhorar a leitura */
+    padding: 0 15px; /* Adiciona padding para evitar que o texto fique colado nas bordas */
+    text-align: justify; /* Alinha o texto de forma justificada para melhor apresentação */
+    width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
+    max-width: 100%; /* Garantir que o parágrafo se ajuste ao container */
   }
-  .logo {
-    display: block;
-    float: left;
+
+  /* Ajuste das colunas */
+  .container {
+    padding: 0 15px; /* Adiciona padding nas laterais da container */
   }
-  .bluid {
-    margin-top: 23px;
+
+  .row {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente em telas pequenas */
+    align-items: center; /* Centraliza os elementos dentro da linha */
   }
-  .banner_main .bluid h1 {
-    font-size: 50px;
-    line-height: 59px;
+
+  .col-md-12 {
+    padding: 0 15px; /* Adiciona algum espaçamento nas laterais da coluna */
+    width: 100%; /* Garante que a coluna ocupe toda a largura disponível */
   }
+
+  /* Ajustes para o texto da descrição */
+  .titlepage p {
+    font-size: 14px; /* Reduzir o texto para melhorar a legibilidade em dispositivos móveis */
+    text-align: justify; /* Mantém o alinhamento do texto */
+  }
+
   #top_section {
-    height: auto; /* Ajuste automático para se ajustar ao conteúdo */
-    padding-top: 50px; /* Reduzir o padding superior para evitar sobreposição */
+    padding-top: 120px; /* Ajustando o padding-top para telas menores */
+    width: 100%; /* Garantir que a altura se ajuste dinamicamente ao conteúdo */
   }
-  .about-section h2 {
-    font-size: 28px; /* Reduzir o tamanho do título para caber na tela */
-    line-height: 36px;
-    text-align: center; /* Garantir que o título esteja centralizado */
-  }
-  .banner_main .bluid .read_more {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  .about-section p {
-    font-size: 14px; /* Reduzir o tamanho da fonte dos parágrafos */
-    line-height: 20px; /* Aumentar o espaçamento entre as linhas */
-    padding: 0 15px; /* Adicionar padding nas laterais para o texto não encostar nas bordas */
-    text-align: justify; /* Justificar o texto para melhor aparência */
-  }
-  .about-section img {
-    max-width: 100%; /* A imagem ocupará no máximo 100% da largura disponível */
-    height: auto; /* Manter a proporção da imagem */
-    margin: 10px 0; /* Adicionar margens em cima e embaixo para espaçamento */
-  }
-  .about-section .content-wrapper {
-    display: block; /* Alterar para bloco, facilitando a disposição do conteúdo em telas pequenas */
-    width: 100%; /* Garantir que o conteúdo ocupe toda a largura disponível */
-  }
-  .about-section .btn {
-    font-size: 16px; /* Aumentar um pouco o tamanho do botão */
-    padding: 12px 20px; /* Aumentar a área de clique */
-    width: 100%; /* Tornar o botão com largura total */
-    margin-top: 20px; /* Adicionar um espaço entre os botões e o conteúdo */
-  }
-  .about-section p {
-    word-wrap: break-word; /* Quebra palavras longas para evitar o overflow */
-  }
-  #we1 a.carousel-control-next {
-    right: 26%;
-  }
-  #we1 a.carousel-control-prev {
-    left: 25%;
-  }
-  #we1 a.carousel-control-next,
-  #we1 a.carousel-control-prev {
-    top: 101%;
-  }
-  .titlepage h2 {
-    font-size: 24px;
-    line-height: 54px;
-  }
-  #ho_nf:hover .portfolio_text {
-    height: 135px;
-    padding: 29px 14px;
-  }
-  .portfolio_text p {
-    font-size: 12px;
-    line-height: 18px;
-  }
-  .main_form .send_btn {
-    margin-bottom: 40px;
-  }
-  #clientsl a.carousel-control-next,
-  #clientsl a.carousel-control-prev {
-    top: 100%;
-  }
-  #clientsl a.carousel-control-next {
-    right: 25%;
-  }
-  #clientsl a.carousel-control-prev {
-    left: 25%;
-  }
-  .clientsl_text i img {
-    float: inherit;
-  }
-  .clientsl_text h3 {
-    margin-top: 11px;
-  }
-  .newslatter_form {
-    display: inherit;
-    margin-top: 40px;
-  }
-  .subs_btn {
-    margin-left: 0;
-    max-width: 223px;
-    margin-top: 30px;
-  }
-  .copyright p {
-    text-align: center;
-  }
-  ul.social_icon {
-    float: inherit;
-    margin-top: 20px;
-  }
-  .navigation.navbar {
-    float: right;
-    display: inherit !important;
-    padding: 0;
-    width: 100%;
-    margin-top: -27px;
-  }
-  .navigation .navbar-collapse {
-    background: #2b2b2b;
-    padding: 20px;
-    margin-top: 65px;
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-  }
-  .navigation.navbar-dark .navbar-nav .nav-link {
-    padding: 10px 0;
-    color: #fff;
-    text-align: left;
-  }
-  .navigation.navbar-dark .navbar-toggler {
-    float: right;
-    border: inherit;
-    margin-top: 1px;
-    padding: 0;
-    outline: inherit;
-  }
-  .navigation.navbar-dark .navbar-toggler-icon {
-    background: url(../images/menu_btn.png);
-    background-repeat: no-repeat;
-    width: 48px;
+
+  /* Ajustes na exibição da imagem ou fundo (se houver) */
+  .about img {
+    width: 100%; /* Garante que imagens não ultrapassem a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
   }
 }

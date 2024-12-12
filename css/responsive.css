@@ -2,7 +2,6 @@
 File Name: responsive.css 
 ---------------------------------------------------------------------*/
 
-
 @media (min-width: 1200px) and (max-width: 1320px) {
   ul.email li {
     padding: 0px 31px;
@@ -161,11 +160,41 @@ File Name: responsive.css
     line-height: 59px;
   }
   #top_section {
-    height: 678px;
+    height: auto; /* Ajuste automático para se ajustar ao conteúdo */
+    padding-top: 50px; /* Reduzir o padding superior para evitar sobreposição */
+  }
+  .about-section h2 {
+    font-size: 28px; /* Reduzir o tamanho do título para caber na tela */
+    line-height: 36px;
+    text-align: center; /* Garantir que o título esteja centralizado */
   }
   .banner_main .bluid .read_more {
     margin-right: 0px;
     margin-bottom: 10px;
+  }
+  .about-section p {
+    font-size: 14px; /* Reduzir o tamanho da fonte dos parágrafos */
+    line-height: 20px; /* Aumentar o espaçamento entre as linhas */
+    padding: 0 15px; /* Adicionar padding nas laterais para o texto não encostar nas bordas */
+    text-align: justify; /* Justificar o texto para melhor aparência */
+  }
+  .about-section img {
+    max-width: 100%; /* A imagem ocupará no máximo 100% da largura disponível */
+    height: auto; /* Manter a proporção da imagem */
+    margin: 10px 0; /* Adicionar margens em cima e embaixo para espaçamento */
+  }
+  .about-section .content-wrapper {
+    display: block; /* Alterar para bloco, facilitando a disposição do conteúdo em telas pequenas */
+    width: 100%; /* Garantir que o conteúdo ocupe toda a largura disponível */
+  }
+  .about-section .btn {
+    font-size: 16px; /* Aumentar um pouco o tamanho do botão */
+    padding: 12px 20px; /* Aumentar a área de clique */
+    width: 100%; /* Tornar o botão com largura total */
+    margin-top: 20px; /* Adicionar um espaço entre os botões e o conteúdo */
+  }
+  .about-section p {
+    word-wrap: break-word; /* Quebra palavras longas para evitar o overflow */
   }
   #we1 a.carousel-control-next {
     right: 26%;
@@ -257,70 +286,3 @@ File Name: responsive.css
     width: 48px;
   }
 }
-.about-section h2 {
-    font-size: 28px; /* Tamanho menor para títulos */
-    line-height: 36px;
-  }
-  
-  .about-section p {
-    font-size: 14px; /* Ajusta o tamanho da fonte do parágrafo */
-    line-height: 20px; /* Aumenta o espaçamento entre linhas */
-  }
-  
-  /* Ajuste de margens e paddings para reduzir o espaçamento */
-  .about-section {
-    padding: 15px; /* Reduz o espaçamento interno */
-    margin: 10px 0; /* Reduz a margem entre as seções */
-  }
-  
-  /* Se houver uma imagem na seção, ajuste o tamanho dela */
-  .about-section img {
-    max-width: 100%; /* Garantir que as imagens não saiam da tela */
-    height: auto;
-  }
-
-  /* Ajuste de largura para conteúdo com colunas, como grid ou flex */
-  .about-section .content-wrapper {
-    display: block; /* Muda de grid/flex para um layout de bloco em telas pequenas */
-    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
-  }
-
-  /* Ajusta os botões ou links para ficarem mais acessíveis */
-  .about-section .btn {
-    font-size: 16px; /* Tamanho maior para facilitar a leitura */
-    padding: 12px 20px; /* Aumenta a área clicável */
-    width: 100%; /* Deixa os botões com largura total */
-    margin-top: 20px; /* Dê mais espaço entre os botões e o conteúdo */
-  }
-  
-  /* Adiciona um ajuste para textos longos, evitando quebra indesejada */
-  .about-section p {
-    word-wrap: break-word; /* Quebra palavras longas para evitar overflow */
-  }
-}
-
-@media (max-width: 576px) {
-  .banner_main .bluid h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .navigation.navbar-dark .navbar-nav .nav-link {
-    padding: 5px 0;
-    font-size: 14px;
-  }
-  ul.social_icon {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  .navigation.navbar-dark {
-    background-color: #1f1f1f;
-  }
-}
-

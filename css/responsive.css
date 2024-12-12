@@ -9,9 +9,15 @@ File Name: responsive.css
   #top_section {
     height: 700px;
   }
+  #about {
+    min-height: 100vh; /* Garantir que a seção ocupe a altura total da tela */
+    padding: 40px;
+    box-sizing: border-box; /* Inclui o padding no cálculo da altura */
+    overflow-y: auto; /* Permite a rolagem se o conteúdo ultrapassar a altura */
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .navigation.navbar-dark .navbar-nav .nav-link {
     padding: 0px 21px;
   }
@@ -22,24 +28,15 @@ File Name: responsive.css
     padding-top: 164px;
     height: 700px;
   }
-  #we1 a.carousel-control-prev {
-    left: 42%;
-  }
-  #clientsl a.carousel-control-prev {
-    left: 33%;
+  #about {
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .about .titlepage h2 {
-    font-size: 28px; /* Ajustar o tamanho do título para telas médias */
-  }
-
-  .about p {
-    font-size: 16px; /* Tamanho de fonte adequado para leitura em dispositivos móveis */
-    line-height: 1.6; /* Melhorar a legibilidade */
-    padding: 0 10px; /* Adicionar algum padding ao redor do texto para evitar que fique grudado nas bordas */
-  }
+@media (min-width: 768px) and (max-width: 991px) {
   .navigation.navbar-dark .navbar-nav .nav-link {
     padding: 0px 7px;
   }
@@ -50,6 +47,12 @@ File Name: responsive.css
     padding-top: 150px;
     height: 600px;
   }
+  #about {
+    min-height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
   .banner_main .bluid h1 {
     font-size: 62px;
     line-height: 71px;
@@ -58,79 +61,162 @@ File Name: responsive.css
     font-size: 37px;
     line-height: 41px;
   }
-  #we1 a.carousel-control-prev {
-    left: 38%;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #top_section {
+    padding-top: 150px;
+    height: 700px;
   }
-  .we_box {
-    padding: 15px;
+  .d_none {
+    display: none;
   }
-  .clientsl_text {
-    padding: 25px;
+  .logo {
+    text-align: left;
+    display: block;
   }
-  #clientsl a.carousel-control-next,
-  #clientsl a.carousel-control-prev {
-    top: 98%;
+  .banner_main .bluid h1 {
+    font-size: 84px;
+    line-height: 109px;
   }
-  #clientsl a.carousel-control-prev {
-    left: 34%;
+  #about {
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite rolagem vertical */
   }
-  #clientsl a.carousel-control-next {
-    right: 26%;
+  .main_form .send_btn {
+    margin-bottom: 40px;
   }
-  .Informa li {
-    font-size: 14px;
-    line-height: 30px;
+  .newslatter_form {
+    margin-top: 50px;
+  }
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+  }
+  .navigation .navbar-collapse {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-top: 66px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #fff;
+    text-align: left;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  .about {
-    padding: 20px 10px; /* Ajusta o padding para evitar sobrecarga de espaço */
-  }
 
-  .about .titlepage h2 {
-    font-size: 22px; /* Tamanho do título mais ajustado para dispositivos móveis */
-    text-align: center; /* Centraliza o título para melhor apresentação */
+@media (max-width: 575px) {
+  .header {
+    padding: 37px 0px;
   }
-
-  .about p {
-    font-size: 16px; /* Aumenta o tamanho da fonte do parágrafo para melhorar a legibilidade */
-    line-height: 1.6; /* Aumenta a altura da linha para melhorar a leitura */
-    padding: 0 15px; /* Adiciona padding para evitar que o texto fique colado nas bordas */
-    text-align: justify; /* Alinha o texto de forma justificada para melhor apresentação */
-    width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
-    max-width: 100%; /* Garantir que o parágrafo se ajuste ao container */
+  .d_none {
+    display: none !important;
   }
-
-  /* Ajuste das colunas */
-  .container {
-    padding: 0 15px; /* Adiciona padding nas laterais da container */
+  .logo {
+    display: block;
+    float: left;
   }
-
-  .row {
-    display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente em telas pequenas */
-    align-items: center; /* Centraliza os elementos dentro da linha */
+  .bluid {
+    margin-top: 23px;
   }
-
-  .col-md-12 {
-    padding: 0 15px; /* Adiciona algum espaçamento nas laterais da coluna */
-    width: 100%; /* Garante que a coluna ocupe toda a largura disponível */
+  .banner_main .bluid h1 {
+    font-size: 50px;
+    line-height: 59px;
   }
-
-  /* Ajustes para o texto da descrição */
-  .titlepage p {
-    font-size: 14px; /* Reduzir o texto para melhorar a legibilidade em dispositivos móveis */
-    text-align: justify; /* Mantém o alinhamento do texto */
-  }
-
   #top_section {
-    padding-top: 120px; /* Ajustando o padding-top para telas menores */
-    width: 100%; /* Garantir que a altura se ajuste dinamicamente ao conteúdo */
+    height: 678px;
   }
+  .titlepage h2 {
+    font-size: 24px;
+    line-height: 54px;
+  }
+  #about {
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  .main_form .send_btn {
+    margin-bottom: 40px;
+  }
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+    margin-top: -27px;
+  }
+  .navigation .navbar-collapse {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-top: 65px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #fff;
+    text-align: left;
+  }
+  .navigation.navbar-dark .navbar-toggler {
+    float: right;
+    border: inherit;
+    margin-top: 1px;
+    padding: 0;
+    outline: inherit;
+  }
+  .navigation.navbar-dark .navbar-toggler-icon {
+    background: url(../images/menu_btn.png);
+    background-repeat: no-repeat;
+    width: 48px;
+  }
+}
 
-  /* Ajustes na exibição da imagem ou fundo (se houver) */
-  .about img {
-    width: 100%; /* Garante que imagens não ultrapassem a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
+/* Estilo específico para a seção "About" */
+#about {
+  padding: 40px; /* Padding para o conteúdo */
+  min-height: 100vh; /* Garantir que a seção ocupe pelo menos toda a altura da tela */
+  box-sizing: border-box;
+  overflow-y: auto; /* Permite a rolagem se o conteúdo for maior que a altura da tela */
+}
+
+#about h2 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#about ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Ajustes adicionais para a responsividade da seção About */
+@media (max-width: 767px) {
+  #about h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #about p {
+    font-size: 16px;
   }
 }

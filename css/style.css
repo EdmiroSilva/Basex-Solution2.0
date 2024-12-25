@@ -304,7 +304,7 @@ header
 }
 
 .logo-img {
-  width: 130px; /* Define a largura */
+  width: 120px; /* Define a largura */
   height: auto; /* Mantém a proporção */
   border: rounded-circle;
 }
@@ -450,7 +450,7 @@ ul.email li i {
 }
 
 .we_do .titlepage::before {
-  border: #231f20 solid 5px;
+  border: #f4cb13 solid 5px;
 }
 
 .we1_do {
@@ -577,7 +577,7 @@ ul.email li i {
 
 .portfolio .titlepage::before {
   right: inherit;
-  border: #2e2f34 solid 5px;
+  border: #f4cb13 solid 5px;
   left: 15px;
 }
 
@@ -679,7 +679,7 @@ ul.email li i {
 
 .contact .titlepage::before {
   right: inherit;
-  border: #2e2f34 solid 5px;
+  border: #f4cb13 solid 5px;
   left: 15px;
 }
 

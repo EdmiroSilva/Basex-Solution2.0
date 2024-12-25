@@ -98,9 +98,17 @@ $(function () {
   /* Product slider 
      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
   // optional
-  $("#blogCarousel").carousel({
-    interval: 1000,
+   $("#blogCarousel").carousel({
+    interval: 3000, // Intervalo ajustado para 3 segundos
+    pause: "hover", // Pausa quando o mouse passa por cima (opcional)
   });
+
+  // Apenas dispositivos móveis: Evitar atualizações na navegação por toque
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    $("#blogCarousel").on("touchstart touchmove", function (event) {
+      event.preventDefault(); // Garante que não haja recarregamento por gestos
+    });
+  }
 });
 
 /* Toggle sidebar

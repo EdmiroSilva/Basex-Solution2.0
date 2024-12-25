@@ -63,7 +63,7 @@ File Name: responsive.css
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width: 767px) {
   #top_section {
     padding-top: 150px;
     height: 700px;
@@ -112,7 +112,7 @@ File Name: responsive.css
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575px) {
   .header {
     padding: 37px 0px;
   }
@@ -211,9 +211,9 @@ File Name: responsive.css
 }
 
 /* Ajustes adicionais para a responsividade da seção About */
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 575px) {
   #about h2 {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 36px;
   }
   #about p {

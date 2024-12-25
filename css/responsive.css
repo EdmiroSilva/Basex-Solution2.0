@@ -10,10 +10,10 @@ File Name: responsive.css
     height: 700px;
   }
   #about {
-    min-height: 100vh; /* Garantir que a seção ocupe a altura total da tela */
+    min-height: 100vh;
     padding: 40px;
-    box-sizing: border-box; /* Inclui o padding no cálculo da altura */
-    overflow-y: auto; /* Permite a rolagem se o conteúdo ultrapassar a altura */
+    box-sizing: border-box;
+    overflow-y: auto;
   }
 }
 
@@ -83,7 +83,7 @@ File Name: responsive.css
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto; /* Permite rolagem vertical */
+    overflow-y: auto;
   }
   .main_form .send_btn {
     margin-bottom: 40px;
@@ -180,12 +180,27 @@ File Name: responsive.css
   }
 }
 
+/* Ajustes para tela pequena (320px e acima) */
+@media (max-width: 480px) {
+  .header {
+    padding: 30px 10px;
+  }
+  .banner_main .bluid h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .titlepage h2 {
+    font-size: 20px;
+    line-height: 48px;
+  }
+}
+
 /* Estilo específico para a seção "About" */
 #about {
-  padding: 40px; /* Padding para o conteúdo */
-  min-height: 100vh; /* Garantir que a seção ocupe pelo menos toda a altura da tela */
+  padding: 40px;
+  min-height: 100vh;
   box-sizing: border-box;
-  overflow-y: auto; /* Permite a rolagem se o conteúdo for maior que a altura da tela */
+  overflow-y: auto;
 }
 
 #about h2 {
@@ -210,7 +225,7 @@ File Name: responsive.css
   margin-bottom: 10px;
 }
 
-/* Ajustes adicionais para a responsividade da seção About */
+/* Ajustes para a responsividade da seção About em telas menores */
 @media (min-width: 320px) and (max-width: 575px) {
   #about h2 {
     font-size: 25px;

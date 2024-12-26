@@ -583,6 +583,10 @@ ul.email li i {
   border: none;
   transition: transform 0.3s;
 }
+.price .card-title {
+  font-size: medium;
+  color: #fff;
+}
 
 .price .card:hover {
   transform: scale(1.05);

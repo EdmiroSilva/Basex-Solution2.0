@@ -535,6 +535,39 @@ ul.email li i {
 
 /** end we_do **/
 
+
+/** about **/
+
+.about {
+  background: url(../images/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 90px 0;
+}
+
+.about .titlepage::before {
+  border: #f4cb13 solid 5px;
+}
+
+.about .titlepage {
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.about .titlepage h2 {
+  color: #fff;
+}
+
+.about .titlepage p {
+  line-height: 28px;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 17px;
+}
+
+/** end about **/
+
 /** price*/
 / .price {
   background: #fff;
@@ -569,37 +602,6 @@ ul.email li i {
 }
 /** end price*/
 
-/** about **/
-
-.about {
-  background: url(../images/3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  padding: 90px 0;
-}
-
-.about .titlepage::before {
-  border: #f4cb13 solid 5px;
-}
-
-.about .titlepage {
-  padding-bottom: 0;
-  margin-bottom: 0px;
-}
-
-.about .titlepage h2 {
-  color: #fff;
-}
-
-.about .titlepage p {
-  line-height: 28px;
-  padding-top: 20px;
-  color: #fff;
-  font-size: 17px;
-}
-
-/** end about **/
 
 /** portfolio **/
 

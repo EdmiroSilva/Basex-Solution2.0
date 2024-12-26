@@ -153,3 +153,14 @@ function sendSMS() {
   console.log("SMS enviado com sucesso!");
 }
 */
+
+$(document).ready(function () {
+  $("#blogCarousel").on("slid.bs.carousel", function () {
+    event.preventDefault(); // Evita o recarregamento durante a transição
+  });
+
+  $("#blogCarousel").on("slide.bs.carousel", function () {
+    event.preventDefault(); // Evita comportamento inesperado ao iniciar a transição
+  });
+});
+

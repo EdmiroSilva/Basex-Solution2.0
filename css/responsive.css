@@ -36,6 +36,16 @@ File Name: responsive.css
   }
 }
 
+.price- {
+  padding: 40px 0;
+}
+.price h1 {
+  font-size: 36px;
+}
+.price .card-title {
+  font-size: 18px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .navigation.navbar-dark .navbar-nav .nav-link {
     padding: 0px 7px;
@@ -61,6 +71,16 @@ File Name: responsive.css
     font-size: 37px;
     line-height: 41px;
   }
+}
+
+.price {
+  padding: 30px 0;
+}
+.price h1 {
+  font-size: 32px;
+}
+.price .card-title {
+  font-size: 16px;
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -110,6 +130,20 @@ File Name: responsive.css
     color: #fff;
     text-align: left;
   }
+}
+
+.price {
+  padding: 25px 0;
+}
+.price h1 {
+  font-size: 28px;
+}
+.price .card-title {
+  font-size: 14px;
+}
+.price .btn {
+  font-size: 14px;
+  padding: 10px 15px;
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -178,6 +212,20 @@ File Name: responsive.css
     background-repeat: no-repeat;
     width: 48px;
   }
+}
+
+.price {
+  padding: 20px 0;
+}
+.price h1 {
+  font-size: 24px;
+}
+.price .card-title {
+  font-size: 14px;
+}
+.price .btn {
+  font-size: 12px;
+  padding: 8px 10px;
 }
 
 /* Ajustes para tela pequena (320px e acima) */

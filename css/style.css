@@ -535,6 +535,40 @@ ul.email li i {
 
 /** end we_do **/
 
+/** price*/
+/ .price {
+  background: #fff;
+  padding: 90px 0 190px 0;
+  color: white;
+}
+
+.price .titlepage::before {
+  border: #f4cb13 solid 5px;
+}
+
+.price .card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.price .card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px #231f20;
+}
+
+.price .btn {
+  color: #fff;
+  background-color: #1a1a1a;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.price .btn:hover {
+  background-color: #f4cb13;
+  color: #1a1a1a;
+}
+/** end price*/
+
 /** about **/
 
 .about {
@@ -546,7 +580,7 @@ ul.email li i {
 }
 
 .about .titlepage::before {
-  border: #f4cb13 solid 5px;
+  border: #fff solid 5px;
 }
 
 .about .titlepage {
@@ -740,6 +774,11 @@ ul.email li i {
 .footer {
   background: #222222;
   padding-top: 90px;
+}
+
+.logo_footer {
+  width: auto;
+  padding-top: 80px;
 }
 
 .newslatter_form {

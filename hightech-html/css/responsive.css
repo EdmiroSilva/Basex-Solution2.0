@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------------- 
+File Name: responsive.css 
+---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  ul.email li {
+    padding: 0px 31px;
+  }
+  #top_section {
+    height: 100vh;
+  }
+  #about {
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .navigation.navbar {
+    float: right;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0px 5px;
+  }
+  .navigation.navbar {
+    float: right;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  ul.email li {
+    padding: 0px 15px;
+  }
+  #top_section {
+    padding-top: 160px;
+    height: auto;
+  }
+  #about {
+    min-height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0px 10px;
+  }
+  ul.email li {
+    padding: 0px 10px;
+  }
+  #top_section {
+    padding-top: 140px;
+    height: auto;
+  }
+  #about {
+    min-height: auto;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  .l-6 {
+    width: 50%;
+  }
+  .banner_main .bluid h1 {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .titlepage h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}

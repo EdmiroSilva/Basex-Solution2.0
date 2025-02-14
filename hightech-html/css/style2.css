@@ -1,0 +1,188 @@
+/*--------------------------------------------------------------------- 
+File Name: style.css 
+---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- 
+import Fonts 
+---------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800,800i&display=swap");
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+
+/*--------------------------------------------------------------------- 
+basic 
+---------------------------------------------------------------------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus {
+  outline: 0;
+}
+
+.btn-custom {
+  margin-top: 20px;
+  background-color: transparent !important;
+  border: 2px solid #ddd;
+  padding: 12px 40px;
+  font-size: 16px;
+}
+
+.navbar-form input {
+  border: none !important;
+}
+
+/*--------------------------------------------------------------------- 
+header 
+---------------------------------------------------------------------*/
+
+.header {
+  width: 100%;
+  background: rgba(39, 43, 44, 0.87);
+  height: 106px;
+  padding: 37px 30px;
+  position: absolute;
+  z-index: 999;
+  box-shadow: 3px 0 13px rgba(30, 30, 30, 0.9);
+}
+
+/*--------------------------------------------------------------------- 
+menu section
+---------------------------------------------------------------------*/
+
+.navigation.navbar {
+  float: right;
+  padding: 0;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+  padding: 0px 30px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  justify-content: right;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f4cb13;
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.navigation.navbar-dark .navbar-nav .active > .nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+/** we_do **/
+
+.we_do {
+  background: #fff;
+  padding: 90px 0 190px 0;
+}
+
+.we1_do {
+  position: inherit;
+  padding: 0;
+}
+
+#bo_ho:hover {
+  border: #292a2c solid 1px;
+  transition: ease-in all 0.5s;
+}
+
+.we_box {
+  border: #e6e7e8 solid 1px;
+  transition: ease-in all 0.5s;
+  padding: 40px;
+  margin-bottom: 26px;
+}
+
+.we_box h3 {
+  color: #292929;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+.we_box h3 img {
+  float: right;
+}
+
+.we_box p {
+  color: #292929;
+  padding-top: 25px;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.we_box .read_more {
+  max-width: 131px;
+  height: 41px;
+  line-height: 41px;
+  margin: 0 auto;
+  display: block;
+  margin-right: 0;
+  background: #464646;
+}
+
+#we1 .carousel-indicators {
+  display: none;
+}
+
+#we1 a.carousel-control-next,
+#we1 a.carousel-control-prev {
+  background: #ffffff;
+  width: 67px;
+  height: 59px;
+  top: 109%;
+  opacity: 1;
+  font-size: 33px;
+  color: #000000;
+  box-shadow: 3px 0 36px rgba(30, 30, 30, 0.2);
+}
+
+#we1 a.carousel-control-prev {
+  left: 43%;
+}
+
+#we1 a.carousel-control-next {
+  right: 43%;
+}
+
+#we1 a.carousel-control-next:focus,
+#we1 a.carousel-control-next:hover,
+#we1 a.carousel-control-prev:focus,
+#we1 a.carousel-control-prev:hover {
+  background: #464646;
+  color: #fff;
+  opacity: 1;
+}
+
+/** end we_do **/
+
+/*- - ener page css--*/
+
+.inner_page .header {
+  box-shadow: 0 -3px 20px 0px #717171;
+  position: inherit;
+}
+
+.inner_page .about {
+  margin: 90px 0;
+}

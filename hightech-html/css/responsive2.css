@@ -1,0 +1,173 @@
+/*--------------------------------------------------------------------- 
+File Name: responsive.css 
+---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  ul.email li {
+    padding: 0px 31px;
+  }
+  #top_section {
+    height: 700px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0px 21px;
+  }
+
+  #top_section {
+    padding-top: 164px;
+    height: 700px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0px 7px;
+  }
+  .navigation.navbar {
+    float: right;
+    padding: 0;
+  }
+
+  #top_section {
+    padding-top: 150px;
+    height: 600px;
+  }
+
+  .titlepage h2 {
+    font-size: 37px;
+    line-height: 41px;
+  }
+  .Informa li {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #top_section {
+    padding-top: 150px;
+    height: 700px;
+  }
+  .d_none {
+    display: none;
+  }
+
+  .logo {
+    text-align: left;
+    display: block;
+  }
+  .banner_main .bluid h1 {
+    font-size: 70px;
+    line-height: 109px;
+  }
+
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+  }
+  .navigation .navbar-collapse {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-top: 66px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #fff;
+    text-align: left;
+  }
+  .navigation.navbar-dark .navbar-toggler {
+    border: inherit;
+    float: right;
+    padding: 0;
+    width: 100%;
+    outline: inherit;
+    margin-top: 0px;
+  }
+  .navigation.navbar-dark .navbar-toggler-icon {
+    background: url(../images/menu_btn.png);
+    background-repeat: no-repeat;
+    width: 48px;
+    float: right;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 37px 0px;
+  }
+  .d_none {
+    display: none !important;
+  }
+  .logo {
+    display: block;
+    float: left;
+  }
+  .bluid {
+    margin-top: 20px;
+  }
+  .banner_main .bluid h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  #top_section {
+    height: 678px;
+  }
+  .titlepage h2 {
+    font-size: 24px;
+    line-height: 54px;
+  }
+  #ho_nf:hover .portfolio_text {
+    height: 135px;
+    padding: 29px 14px;
+  }
+  .portfolio_text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .copyright p {
+    text-align: center;
+  }
+
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+    margin-top: -27px;
+  }
+  .navigation .navbar-collapse {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-top: 65px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #fff;
+    text-align: left;
+  }
+  .navigation.navbar-dark .navbar-toggler {
+    float: right;
+    border: inherit;
+    margin-top: 1px;
+    padding: 0;
+    outline: inherit;
+  }
+  .navigation.navbar-dark .navbar-toggler-icon {
+    background: url(../images/menu_btn.png);
+    background-repeat: no-repeat;
+    width: 48px;
+  }
+}

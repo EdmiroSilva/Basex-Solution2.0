@@ -725,7 +725,18 @@ li {
   flex: 1 1 calc(16.66% - 30px); /* 16.66% para 6 por linha, considerando o espaçamento */
   max-width: 150px; /* Define um tamanho fixo */
 }
+@media (max-width: 1024px) {
+  .categoria .card {
+    flex: 1 1 calc(25% - 30px); /* 4 por linha */
+  }
+}
 
+/* Responsividade para celulares (máximo de 2 por linha) */
+@media (max-width: 600px) {
+  .categoria .card {
+    flex: 1 1 calc(50% - 30px); /* 2 por linha */
+  }
+}
 /** portfolio **/
 .li_icon {
   display: flex;

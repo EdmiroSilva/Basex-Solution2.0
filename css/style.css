@@ -595,11 +595,36 @@ li {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   margin: 50px 0;
 }
 
+.grid img {
+  width: 50%;
+  height: 100%; /* Faz a imagem ocupar toda a altura do bloco */
+  object-fit: cover; /* Mantém a proporção sem distorcer */
+}
+.grid div {
+  width: 50%;
+  padding: 40px;
+  background-color: #111; /* Escuro como no exemplo */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column; /* Empilha os elementos no mobile */
+  }
+
+  .grid img,
+  .grid div {
+    width: 100%; /* Ocupa toda a largura no mobile */
+  }
+}
 /* Column settings */
 .m-12 {
   width: 100%;

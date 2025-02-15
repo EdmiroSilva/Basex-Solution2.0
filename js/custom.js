@@ -1,7 +1,36 @@
 /*---------------------------------------------------------------------
     File Name: custom.js
 ---------------------------------------------------------------------*/
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "pt", autoDisplay: false },
+    "google_translate_element"
+  );
+}
 
+function changeLanguage(lang) {
+  var select = document.querySelector(".goog-te-combo");
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event("change"));
+  }
+  setTimeout(removeGoogleTranslateBar, 500);
+}
+
+function removeGoogleTranslateBar() {
+  var elementsToRemove = [
+    ".goog-te-banner-frame",
+    ".goog-te-balloon-frame",
+    'iframe[style*="visibility: visible"]',
+  ];
+  elementsToRemove.forEach((selector) => {
+    var el = document.querySelector(selector);
+    if (el) el.remove();
+  });
+}
+
+// Remove a barra assim que a página carregar
+window.onload = removeGoogleTranslateBar;
 $(function () {
   "use strict";
 
@@ -147,20 +176,9 @@ document.getElementById("backToTop").addEventListener("click", function () {
 });
 /*Fim Voltar pro top*/
 
-/*Expandir info no mobile*/
-document.querySelectorAll(".expand-btn").forEach((button) => {
-  button.addEventListener("click", function () {
-    let box = this.parentElement;
-    if (box.classList.contains("expanded")) {
-      box.classList.remove("expanded");
-      this.textContent = "Ver mais";
-    } else {
-      box.classList.add("expanded");
-      this.textContent = "Ver menos";
-    }
-  });
-});
-/*Fim Expandir info no mobile*/
+/* Traduzir a pagina*/
+
+/* Fim Traduzir a pagina*/
 
 /*Alerta para subscrição*/
 document.addEventListener("DOMContentLoaded", function () {

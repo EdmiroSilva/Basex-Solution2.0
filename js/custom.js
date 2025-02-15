@@ -145,27 +145,23 @@ document.getElementById("backToTop").addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+/*Fim Voltar pro top*/
 
 /*Expandir info no mobile*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  const verMaisBtn = document.querySelector(".ver-mais");
-  const cards = document.querySelectorAll(".product-container .card");
-
-  if (verMaisBtn) {
-    verMaisBtn.addEventListener("click", function (e) {
-      e.preventDefault(); // Evita o comportamento padrão do link
-
-      // Exibe todos os produtos ocultos
-      cards.forEach((card) => {
-        card.style.display = "inline-block";
-      });
-
-      // Oculta o botão "Ver Mais" após a expansão
-      verMaisBtn.style.display = "none";
-    });
-  }
+document.querySelectorAll(".expand-btn").forEach((button) => {
+  button.addEventListener("click", function () {
+    let box = this.parentElement;
+    if (box.classList.contains("expanded")) {
+      box.classList.remove("expanded");
+      this.textContent = "Ver mais";
+    } else {
+      box.classList.add("expanded");
+      this.textContent = "Ver menos";
+    }
+  });
 });
+/*Fim Expandir info no mobile*/
+
 /*Alerta para subscrição*/
 document.addEventListener("DOMContentLoaded", function () {
   document

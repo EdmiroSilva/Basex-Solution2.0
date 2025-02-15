@@ -683,9 +683,17 @@ li {
 }
 .product-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+}
+
+.product-container .categoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
 }
 
 .product-container .card {
@@ -693,11 +701,11 @@ li {
   flex-direction: column;
   align-items: center;
   background-color: #f4f4f4;
-  padding: 25px;
+  padding: 15px;
   border: 1px solid #ddd;
   width: 150px;
   height: 250px;
-  text-align: justify;
+  text-align: center;
 }
 
 .product-container .card img {
@@ -706,9 +714,16 @@ li {
   object-fit: cover;
   margin-bottom: 10px;
 }
+
 .product-container .card-title {
   font-size: 13px;
   font-weight: 500;
+}
+
+/* Ajuste para exibir 6 cards por linha */
+.categoria .card {
+  flex: 1 1 calc(16.66% - 30px); /* 16.66% para 6 por linha, considerando o espaçamento */
+  max-width: 150px; /* Define um tamanho fixo */
 }
 
 /** portfolio **/
